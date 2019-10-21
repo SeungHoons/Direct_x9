@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Directx9", "Directx9\Directx9.vcxproj", "{6F33AD76-00D2-414C-9635-98766AA28CEA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1017_CreateDevice", "1017_CreateDevice\1017_CreateDevice.vcxproj", "{2A8F6ADA-3931-48FA-8E7B-7B258E44EAB8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_CreateDevice", "1017_CreateDevice\1017_CreateDevice.vcxproj", "{2A8F6ADA-3931-48FA-8E7B-7B258E44EAB8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1017_02_Vertex", "1017_02_Vertex\1017_02_Vertex.vcxproj", "{59A1A601-195C-46AF-8991-0B2DCB18E0F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_Vertex", "1017_02_Vertex\1017_02_Vertex.vcxproj", "{59A1A601-195C-46AF-8991-0B2DCB18E0F4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_Matrix", "03_Matrix\03_Matrix.vcxproj", "{14131146-43B1-4910-9682-DB531A19FEBF}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_Mesh", "06_Mesh\06_Mesh.vcxproj", "{2D44F2AE-BE3C-4C8B-8403-187166C4A149}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_IndexBuffer", "07_IndexBuffer\07_IndexBuffer.vcxproj", "{81C8B0F4-A50C-4F2D-B97E-8C9D6415B32E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1021_mathod", "1021_mathod\1021_mathod.vcxproj", "{F369DD55-1C87-498B-BD90-7DF759440DD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,14 @@ Global
 		{81C8B0F4-A50C-4F2D-B97E-8C9D6415B32E}.Release|x64.Build.0 = Release|x64
 		{81C8B0F4-A50C-4F2D-B97E-8C9D6415B32E}.Release|x86.ActiveCfg = Release|Win32
 		{81C8B0F4-A50C-4F2D-B97E-8C9D6415B32E}.Release|x86.Build.0 = Release|Win32
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Debug|x64.ActiveCfg = Debug|x64
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Debug|x64.Build.0 = Debug|x64
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Debug|x86.ActiveCfg = Debug|Win32
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Debug|x86.Build.0 = Debug|Win32
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x64.ActiveCfg = Release|x64
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x64.Build.0 = Release|x64
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x86.ActiveCfg = Release|Win32
+		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

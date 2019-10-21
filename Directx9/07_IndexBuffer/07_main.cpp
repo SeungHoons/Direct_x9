@@ -167,6 +167,8 @@ void Render()
 	g_pD3DDevice->Present(NULL, NULL, NULL, NULL);
 }
 
+D3DXMATRIXA16 g_matrix;
+
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdParam, int nCmdShow)
 {
 	HWND hWnd;
@@ -220,10 +222,35 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmd
 	return (int)Message.wParam;
 }
 
+D3DXMATRIXA16 tempMat;
+D3DXMATRIXA16 tempMat2;
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
 	switch (iMessage)
 	{
+	case WM_CREATE:
+
+		g_matrix._11 = 0;
+		g_matrix._12 = 1;
+		g_matrix._13 = 2;
+		g_matrix._14 = 3;
+		g_matrix._21 = 0;
+		g_matrix._22 = 1;
+		g_matrix._23 = 2;
+		g_matrix._24 = 3;
+		g_matrix._31 = 0;
+		g_matrix._32 = 1;
+		g_matrix._33 = 2;
+		g_matrix._34 = 3;
+		g_matrix._41 = 0;
+		g_matrix._42 = 1;
+		g_matrix._43 = 2;
+		g_matrix._44 = 3;
+		D3DXMatrixRotationX(&tempMat, 90.0f);
+
+		D3DXMatrixMultiply(&tempMat2, &g_matrix, &tempMat);
+
+		return 0;
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		return 0;
