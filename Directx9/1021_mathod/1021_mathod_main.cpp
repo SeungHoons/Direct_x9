@@ -67,8 +67,9 @@ MY_MATRIX multifly(MY_MATRIX& _mat1, MY_VECTOR3& _vec);
 
 MY_MATRIX moveMatirx(MY_MATRIX& _mat1, MY_VECTOR3& _vec);
 MY_MATRIX rotationX(MY_MATRIX& _mat1, float seta);
+MY_MATRIX rotationY(MY_MATRIX& _mat1, float seta);
 
-int Seta;
+float Seta;
 
 
 
@@ -86,6 +87,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	switch (iMessage)
 	{
 	case WM_CREATE:
+		SetTimer(hWnd, 1, 10, NULL);
 		Seta = 0;
 		for (int i = 0; i < 4; i++)
 		{
@@ -124,6 +126,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		//x = LOWORD(lParam);
 		//y = HIWORD(lParam);
 		//bNowDraw = TRUE;
+		return 0;
+	case WM_TIMER:
+		Seta+= 0.1f;
+		g_matrix_result = rotationY(g_matrix_test, Seta);
+		InvalidateRect(hWnd, NULL, TRUE);
 		return 0;
 	case WM_MOUSEMOVE:
 		return 0;
@@ -220,6 +227,28 @@ MY_MATRIX rotationX(MY_MATRIX& _mat1, float seta)
 	float temp[4][4] =
 	{
 		{ 1,0,0,0 }, { 0,cos(seta),sin(seta),0 }, {0,-sin(seta),cos(seta),0}, {0,0,0,1}
+	};
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			tempMat.mat[i][j] = temp[i][j];
+		}
+	}
+
+	result = multifly(_mat1, tempMat);
+
+	return result;
+}
+
+
+MY_MATRIX rotationY(MY_MATRIX& _mat1, float seta)
+{
+	MY_MATRIX result;
+	MY_MATRIX tempMat;
+	float temp[4][4] =
+	{
+		{ cos(seta),0,sin(seta),0 }, { 0,1,0,0 }, {-sin(seta),0,cos(seta),0}, {0,0,0,1}
 	};
 	for (int i = 0; i < 4; i++)
 	{

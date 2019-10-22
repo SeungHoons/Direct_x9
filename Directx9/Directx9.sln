@@ -21,6 +21,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_IndexBuffer", "07_IndexB
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1021_mathod", "1021_mathod\1021_mathod.vcxproj", "{F369DD55-1C87-498B-BD90-7DF759440DD9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1022_KeyFrame_Animation", "1022_KeyFrame_Animation\1022_KeyFrame_Animation.vcxproj", "{C49C863F-0FBF-499E-A9FC-E9C057B9B592}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1022_Star", "1022_Star\1022_Star.vcxproj", "{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +105,22 @@ Global
 		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x64.Build.0 = Release|x64
 		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x86.ActiveCfg = Release|Win32
 		{F369DD55-1C87-498B-BD90-7DF759440DD9}.Release|x86.Build.0 = Release|Win32
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Debug|x64.ActiveCfg = Debug|x64
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Debug|x64.Build.0 = Debug|x64
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Debug|x86.ActiveCfg = Debug|Win32
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Debug|x86.Build.0 = Debug|Win32
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Release|x64.ActiveCfg = Release|x64
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Release|x64.Build.0 = Release|x64
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Release|x86.ActiveCfg = Release|Win32
+		{C49C863F-0FBF-499E-A9FC-E9C057B9B592}.Release|x86.Build.0 = Release|Win32
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Debug|x64.ActiveCfg = Debug|x64
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Debug|x64.Build.0 = Debug|x64
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Debug|x86.ActiveCfg = Debug|Win32
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Debug|x86.Build.0 = Debug|Win32
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Release|x64.ActiveCfg = Release|x64
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Release|x64.Build.0 = Release|x64
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Release|x86.ActiveCfg = Release|Win32
+		{5AF2F351-ECE8-4CFD-B217-6CA0093A3B63}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
