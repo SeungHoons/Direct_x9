@@ -2,7 +2,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 //사용되지 않느 ㄴ윈도우 헤더 컴파일 제외
-#define NOMINMAX
+//#define NOMINMAX
 
 #include <Windows.h>
 
@@ -15,6 +15,7 @@
 //#include "ZTerrain.h"
 //#include "ZFLog.h"
 #include "SAFE_DELETE.h"
+#include "Dib.h"
 
 //전처리기로 세팅
 //#pragma comment(lib, "d3d9.lib")

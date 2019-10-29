@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D724A2C0-1647-400C-9B17-A3AC26D08BDB}</ProjectGuid>
+    <ProjectGuid>{08768C9E-C0EA-443E-8DB2-E2F495E24BF7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Tank</RootNamespace>
+    <RootNamespace>Asecharacter</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -92,7 +92,6 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -144,40 +143,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Common\Dib.cpp" />
-    <ClCompile Include="..\..\Common\ZFLog.cpp" />
-    <ClCompile Include="..\..\Common\ZFrustum.cpp" />
-    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="..\..\Common\LabelRenderer.cpp" />
+    <ClCompile Include="..\..\Common\Timer.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="ASEMesh.cpp" />
+    <ClCompile Include="ASEParser.cpp" />
+    <ClCompile Include="ase_character_main.cpp" />
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="DeviceManager.cpp" />
-    <ClCompile Include="GlobalFunc.cpp" />
-    <ClCompile Include="KeyManager.cpp" />
-    <ClCompile Include="MainScene.cpp" />
-    <ClCompile Include="PlayerTank.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="Tank_main.cpp" />
-    <ClCompile Include="Terrain.cpp" />
-    <ClCompile Include="ZQuadTree.cpp" />
+    <ClCompile Include="FileIO.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshData.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Common\define.h" />
-    <ClInclude Include="..\..\Common\Dib.h" />
-    <ClInclude Include="..\..\Common\ZFLog.h" />
-    <ClInclude Include="..\..\Common\ZFrustum.h" />
-    <ClInclude Include="Application.h" />
+    <ClInclude Include="..\..\Common\LabelRenderer.h" />
+    <ClInclude Include="..\..\Common\Timer.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="ASEMesh.h" />
+    <ClInclude Include="ASEParser.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="DeviceManager.h" />
-    <ClInclude Include="GlobalFunc.h" />
-    <ClInclude Include="KeyManager.h" />
-    <ClInclude Include="MainScene.h" />
-    <ClInclude Include="PlayerTank.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="SceneManager.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Terrain.h" />
-    <ClInclude Include="ZQuadTree.h" />
+    <ClInclude Include="FileIO.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshData.h" />
+    <ClInclude Include="MeshDataEtc.h" />
+    <ClInclude Include="TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

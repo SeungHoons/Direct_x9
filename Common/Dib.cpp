@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "dib.h"
+#include "Dib.h"
 
 #define DEFAULT_XPIXELSPERMETER	3000
 #define DEFAULT_YPIXELSPERMETER	3000

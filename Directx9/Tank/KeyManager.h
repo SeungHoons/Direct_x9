@@ -1,4 +1,7 @@
 #pragma once
+
+#define g_pKeyaManager KeyManager::GetInstance()
+
 class KeyManager
 {
 private:
@@ -9,7 +12,7 @@ private:
 	KeyManager();
 	~KeyManager();
 public:
-	static KeyManager* Instance()
+	static KeyManager* GetInstance()
 	{
 		static KeyManager Instance;
 		return &Instance;

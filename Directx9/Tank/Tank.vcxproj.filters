@@ -19,6 +19,15 @@
     <Filter Include="소스 파일\05_Manager">
       <UniqueIdentifier>{c6f8e041-39c7-420e-ab33-46c95ea57b25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01_Scene">
+      <UniqueIdentifier>{112cc943-216d-4134-b76f-4e299159c114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02_Object">
+      <UniqueIdentifier>{e10669a6-dac1-4838-9063-8aeab7f93e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04_Useful">
+      <UniqueIdentifier>{284bcd8f-9f6d-4400-8316-4546a532a3fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tank_main.cpp">
@@ -36,6 +45,39 @@
     <ClCompile Include="KeyManager.cpp">
       <Filter>소스 파일\05_Manager</Filter>
     </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTank.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Dib.cpp">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZFrustum.cpp">
+      <Filter>소스 파일\06_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZFLog.cpp">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalFunc.cpp">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="ZQuadTree.cpp">
+      <Filter>소스 파일\06_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -49,6 +91,42 @@
     </ClInclude>
     <ClInclude Include="KeyManager.h">
       <Filter>소스 파일\05_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>소스 파일\01_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTank.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\define.h">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Dib.h">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZFrustum.h">
+      <Filter>소스 파일\06_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZFLog.h">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalFunc.h">
+      <Filter>소스 파일\04_Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="ZQuadTree.h">
+      <Filter>소스 파일\06_Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

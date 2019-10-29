@@ -41,12 +41,19 @@ HRESULT DeviceManager::Init()
 	d3dpp.AutoDepthStencilFormat = D3DFMT_D16;			//유효한 깊이 버퍼 포맷을 설정하는것 / 대입한 D3DFMT_D16은 16비트의 깊이 버퍼를 사용할수 있는 경우에 지정합니다.
 	//d3dpp.PresentationInterval = D3DPRESENT_INTERVAL_IMMEDIATE;		//최대 초당 프레임이 해당 모니터 주사율과 동일하게 나오도록 디폴트 되어있는데 그것을 풀어주는 역할
 	d3dpp.PresentationInterval = D3DPRESENT_INTERVAL_DEFAULT;	//다이렉트가 적절한 값을 찾아 렌더링 간격을 조정한다.
-	if (FAILED(m_pD3D->CreateDevice(
+	/*if (FAILED(m_pD3D->CreateDevice(
 		D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL,
 		g_hWnd, vp, &d3dpp, &m_pD3DDevice)))
 	{
 		return E_FAIL;
-	}
+	}*/
+
+	if (FAILED(m_pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, g_hWnd,
+		D3DCREATE_SOFTWARE_VERTEXPROCESSING, &d3dpp, &m_pD3DDevice)))
+		return E_FAIL;
+
+	m_pD3DDevice->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
+	m_pD3DDevice->SetRenderState(D3DRS_ZENABLE, TRUE);
 
 	return S_OK;
 }
